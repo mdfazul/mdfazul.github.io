@@ -9,7 +9,7 @@ function performSearch() {
         getResult(query)
         // cloudflairAI(query)
 
-        resultsBox.innerHTML = "<img id='loading' src='img/Loading.gif' alt='loading'/>"
+        resultsBox.innerHTML = "<img id='loading' src='img/loading.gif' alt='loading'/>"
      
     } else {
         resultsBox.innerHTML = "<div class='text-center'><h3>Find out which ingredients are healthy or hazardous in your favorite packed foods, beverages, and groceries.<h3></div>";
