@@ -189,6 +189,9 @@ async function loadResult(outputText){
     // console.log(outputText.includes("ingredient"))
 
     // console.log(healthy.length)
+    if(healthy.length == 0 && hazard == 0){
+      notFoodItem();
+    }else {
     if(healthy.length == 0){
         const li = document.createElement("li");
         li.classList.add("healthy");
@@ -243,10 +246,13 @@ async function loadResult(outputText){
     // Set disclaimer text
     disc.innerHTML = "<b>Disclaimer: </b>"+disclaimerData;
     info.appendChild(disc)
-// }
-    } else {
-        notFoodItem()
-    }
+}
+    // } else {
+    //     notFoodItem()
+    // }
+  }else {
+    notFoodItem();
+  }
 
 // Call the function to render the data
 // loadResult();
